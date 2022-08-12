@@ -1,7 +1,6 @@
-
-class max{
- 
-    public static int Int(int[] i){
+class ctools{
+     
+    public static int maxValue(int[] i){
         int a=i[0];
         for (int j=1; j<i.length;j++){
             if (a<i[j]){
@@ -10,8 +9,8 @@ class max{
         }
         return a;    
     }
-
-    public static float Float(float[] f){
+    
+    public static float maxValue(float[] f){
          float a=f[0];
          for(int j=0;j<f.length;j++){
             if(a<f[j]){
@@ -19,5 +18,15 @@ class max{
             }
          }
          return a;
+    }
+    
+    public static double maxValue(double[] d){
+        double a=d[0];
+        for(int j=1;j<d.length;j++){
+            if(a<d[j]){
+                a=d[j];
+            }
+        }
+        return a;
     }
 }
